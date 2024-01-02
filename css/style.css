@@ -1,0 +1,29 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    background-color: #d78d8d;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 55px;
+    font-weight: bold;
+    color: #333;
+}
+
+h2{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+}
+
+.divhome{
+    text-align: center;
+}

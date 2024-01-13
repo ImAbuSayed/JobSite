@@ -1,0 +1,10 @@
+{
+  "autoload": {
+    "psr-4": {
+      "JobSite\\": "lib/"
+    },
+    "files": [
+      "lib/functions.php"
+    ]
+  }
+}

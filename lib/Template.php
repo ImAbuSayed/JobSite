@@ -1,4 +1,6 @@
 <?php
+
+namespace JobSite;
 class Template{
     protected $template;
     protected $vars = [];
@@ -21,7 +23,6 @@ class Template{
         chdir(dirname($this->template));
         ob_start();
         include basename($this->template);
-
         return ob_get_clean();
     }
 }

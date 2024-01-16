@@ -24,4 +24,14 @@ class Job
 
         return $results;
     }
+
+    //Get Categories
+    public function getCategories(){
+        $this->db->query("SELECT * FROM categories");
+
+        // Assign result set
+        $results = $this->db->resultSet();
+
+        return $results;
+    }
 }

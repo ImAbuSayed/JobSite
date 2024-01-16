@@ -7,35 +7,20 @@
         <a class="btn btn-lg btn-primary" href="jobs.php" role="button">View All Jobs</a>
         <hr class="my-4">
     </div>
+    <h2>Latest Jobs</h2>
+    <?php foreach ($jobs as $job): ?>
     <div class="container">
-        <h2>Latest Jobs</h2>
         <div class="row marketing">
             <div class="col-md-10">
-                <h3>Job 1</h3>
-                <p>This is job 1.</p>
+                <h3><?php echo $job->job_title; ?></h3>
+                <p><?php echo $job->description; ?></p>
             </div>
             <div class="col-md-2">
                 <a class="btn btn-lg btn-primary" href="jobs.php" role="button">View</a>
             </div>
         </div>
-        <div class="row marketing">
-            <div class="col-md-10">
-                <h3>Job 2</h3>
-                <p>This is job 2.</p>
-            </div>
-            <div class="col-md-2">
-                <a class="btn btn-lg btn-primary" href="jobs.php" role="button">View</a>
-            </div>
-        </div>
-        <div class="row marketing">
-            <div class="col-md-10">
-                <h3>Job 3</h3>
-                <p>This is job 3.</p>
-            </div>
-            <div class="col-md-2">
-                <a class="btn btn-lg btn-primary" href="jobs.php" role="button">View</a>
-            </div>
-        </div>
+        <hr>
     </div>
+    <?php endforeach; ?>
 </div>
 <?php include_once 'inc/footer.php'; ?>

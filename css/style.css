@@ -1,13 +1,3 @@
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    height: 60px;
-    background-color: #d78d8d;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
 h1{
     text-align: center;
     margin-top: 50px;
@@ -24,6 +14,10 @@ h2{
     color: #333;
 }
 
-.divhome{
+.jumbotron{
     text-align: center;
+}
+
+.marketing{
+    text-align: left;
 }

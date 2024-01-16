@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,8 +6,8 @@
     <title><?php echo $title ?></title>
     <link rel="stylesheet" href="css/style.css">
     <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="https://bootswatch.com/5/flatly/bootstrap.min.css" >
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -21,10 +20,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                    <a class="nav-link active" aria-current="page" href="localhost/jobsite/JobSite">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Jobs.php">Jobs</a>
+                    <a class="nav-link" href="Jobs.php">All Jobs</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"

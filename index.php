@@ -7,9 +7,22 @@ use JobSite\Job;
 $job = new Job();
 
 $template = new Template("templates/frontpage.php");
-
 $template->title = "Job Site by Sayed";
-$template->jobs = $job->getAllJobs();
+
+
+//Get Categories
+$category = isset($_GET['category']) ? $_GET['category'] : null;
+
+if($category){
+    //Get jobs by category
+    $template->jobs = $job->getJobsByCategory($category);
+
+} else {
+    //Get all jobs
+    $template->jobs = $job->getAllJobs();
+}
+
+
 $template->categories = $job->getCategories();
 
 echo $template;

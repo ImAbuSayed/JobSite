@@ -1,14 +1,26 @@
 
 <?php include_once 'inc/header.php'; ?>
 <div class="divhome">
-    <div class="jumbotron">
+    <div class="jumbotron container">
         <h2>Find Your Dream Job</h2>
-        <p class="lead">This is a Job Site!</p>
-        <a class="btn btn-outline-dark" href="jobs.php" role="button">View All Jobs</a>
-        <hr class="my-4">
+        <hr>
+        <form class="form-inline my-2 my-lg-0" method="GET" action="index.php">
+            <select class="rounded-4 form-control text-center bg-dark-subtle" name="category">
+                <option value="0">All Categories</option>
+                <hr>
+                <?php foreach ($categories as $category): ?>
+                <option value="<?php echo $category->id; ?>">
+                    <?php echo $category->name; ?>
+                </option>
+                <hr>
+                <?php endforeach; ?>
+            </select>
+            <br>
+            <input role="button" class="btn btn-outline-dark" type="submit" value="FIND">
+        </form>
+        <br>
     </div>
-    <h2>Latest Jobs</h2>
-    <hr>
+    <hr class="my-4">
     <?php foreach ($jobs as $job): ?>
     <div class="container bg-dark-subtle text-emphasis-dark rounded-4">
         <hr>

@@ -25,7 +25,7 @@
     if ($categoryId) {
         echo "<h3 class='text-center'>" . "Latest " . $selectedCategory->name . " Related Jobs" . "</h3>";
     } else {
-        echo "<h3>Latest Jobs</h3>";
+        echo "<h3 class='text-center'>Latest Jobs</h3>";
     }
     ?>
     <?php foreach ($jobs as $job): ?>

@@ -11,11 +11,11 @@ $template->title = "Job Site by Sayed";
 
 
 //Get Categories
-$category = isset($_GET['category']) ? $_GET['category'] : null;
+$template->categoryId = isset($_GET['category']) ? $_GET['category'] : null;
 
-if($category){
+if($template->categoryId){
     //Get jobs by category
-    $template->jobs = $job->getJobsByCategory($category);
+    $template->jobs = $job->getJobsByCategory($template->categoryId);
 
 } else {
     //Get all jobs

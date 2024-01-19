@@ -5,11 +5,11 @@
         <h2>Find Your Dream Job</h2>
         <hr>
         <form class="form-inline my-2 my-lg-0" method="GET" action="index.php">
-            <select class="rounded-4 form-control text-center bg-dark-subtle" name="category">
+            <select class="rounded-4 form-control text-center bg-dark text-white" name="category">
                 <option value="0">All Categories</option>
                 <hr>
                 <?php foreach ($categories as $category): ?>
-                <option value="<?php echo $category->id; ?>">
+                <option value="<?php echo $category->id; ?>" <?php echo ($category->id == $categoryId) ? 'selected' : ''; ?>>
                     <?php echo $category->name; ?>
                 </option>
                 <hr>

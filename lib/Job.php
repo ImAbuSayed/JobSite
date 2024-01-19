@@ -49,4 +49,15 @@ class Job
 
         return $results;
     }
+
+    //Get Category Name by ID
+    public function getCategoryNameById($id){
+        $this->db->query("SELECT * FROM categories WHERE id = :id");
+
+        $this->db->bind(':id', $id);
+
+        $row = $this->db->single();
+
+        return $row;
+    }
 }

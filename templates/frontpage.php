@@ -42,7 +42,7 @@
                     <p><?php echo $job->description; ?></p>
                 </div>
                 <div class="col-md-2 align-self-center">
-                    <a class="btn btn-outline-dark rounded-5" href="jobs.php" role="button"><b>View</b></a>
+                    <a class="btn btn-outline-dark rounded-5" href="job.php?id=<?php echo $job->id; ?>" role="button"><b>View</b></a>
                 </div>
             </div>
             <hr>

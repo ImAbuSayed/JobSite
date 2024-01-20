@@ -2,12 +2,12 @@
 include_once 'vendor/autoload.php';
 //include_once 'config/config.php';
 use JobSite\Template;
-use JobSite\Job;
+use JobSite\Jobs;
 
-$job = new Job();
+$job = new Jobs();
 
 $template = new Template("templates/frontpage.php");
-$template->title = "Job Site by Sayed";
+$template->title = "Jobs Site by Sayed";
 
 //Get Categories
 $template->categoryId = isset($_GET['category']) ? $_GET['category'] : null;

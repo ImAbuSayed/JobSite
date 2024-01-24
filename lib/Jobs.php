@@ -63,11 +63,9 @@ class Jobs
 
     //Get Job by ID
     public function getJobById($id){
-        $this->db->query("SELECT jobs.*, categories.name AS cname
-        FROM jobs
-        INNER JOIN categories
-            ON jobs.category_id = categories.id
-        WHERE jobs.id = $id");
+        $this->db->query("SELECT jobs.*, categories.name FROM jobs 
+                  INNER JOIN categories ON jobs.category_id = categories.id 
+                  WHERE jobs.id = :id");
 
         $this->db->bind(':id', $id);
 

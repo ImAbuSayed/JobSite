@@ -33,6 +33,12 @@ include_once 'inc/header.php';
             </tr>
             <tr>
                 <td class=" tg-n6bu
+        ">Salary
+                </td>
+                <td class="tg-0lax"><?php echo $job->salary; ?></td>
+            </tr>
+            <tr>
+                <td class=" tg-n6bu
         ">Posted By
                 </td>
                 <td class="tg-0lax"><?php //echo $job->username; ?></td>

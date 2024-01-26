@@ -37,7 +37,8 @@
                     <p class="small rounded-2 shadow-sm bg-dark btn-secondary text-white p-1"><u class="nav-underline">Company:</u>
                         <b><?php echo $job->company; ?></b> <b>|</b> <u class="nav-underline">Job Category:</u>
                         <b><?php echo $job->cname; ?></b> <b>|</b> <u class="nav-underline">Location:</u>
-                        <b><?php echo $job->location; ?></b><br><u class="nav-underline">Deadline:</u>
+                        <b><?php echo $job->location; ?></b> |</b> <u class="nav-underline">Salary:</u>
+                        <b><?php echo $job->salary; ?></b><br><u class="nav-underline">Deadline:</u>
                         <b><?php echo date('F j, Y', strtotime($job->deadline)); ?></b></p>
                     <p><?php echo $job->description; ?></p>
                 </div>

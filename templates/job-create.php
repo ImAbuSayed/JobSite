@@ -37,8 +37,8 @@
         </div>
 
         <div class="form-group">
-            <label for="description">Description</label>
-            <textarea name="description" id="description" class="form-control" required></textarea>
+            <label for="description">Short Description</label>
+            <textarea maxlength="120" name="description" id="description" class="form-control" required></textarea>
         </div>
 
         <div class="form-group">
@@ -46,7 +46,15 @@
             <input type="text" name="salary" id="salary" class="form-control" required>
         </div>
 
+        <div class="form-group">
+            <label for="contact_user">Contact User</label>
+            <input type="text" name="contact_user" id="contact_user" class="form-control" required>
+        </div>
 
+        <div class="form-group">
+            <label for="contact_email">Contact Email</label>
+            <input type="email" name="contact_email" id="contact_email" class="form-control" required>
+        </div>
 
 
 

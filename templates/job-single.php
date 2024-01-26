@@ -39,13 +39,19 @@ include_once 'inc/header.php';
             </tr>
             <tr>
                 <td class=" tg-n6bu
+        ">Responsibilities
+                </td>
+                <td class="tg-0lax"><?php echo $job->responsibility; ?></td>
+            </tr>
+            <tr>
+                <td class=" tg-n6bu
         ">Posted By
                 </td>
-                <td class="tg-0lax"><?php //echo $job->username; ?></td>
+                <td class="tg-0lax"><?php echo $job->contact_user; ?></td>
             </tr>
             <tr>
                 <td class="tg-n6bu">Email</td>
-                <td class="tg-0lax"><?php //echo $job->email; ?></td>
+                <td class="tg-0lax"><?php echo $job->contact_email; ?></td>
             </tr>
             <tr>
                 <td class=" tg-n6bu

@@ -71,6 +71,10 @@ include_once 'inc/header.php';
                                                                                   href="job.php?id=<?php echo $job->id; ?>"
                                                                                   role="button"><b>Bookmark</b></a>
         </div>
+        <div>
+            <a class="btn btn-danger rounded-5"
+               href="index.php" role="button"><b>Back</b></a>
+        </div>
     </div>
 
 

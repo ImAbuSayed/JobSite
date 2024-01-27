@@ -47,4 +47,6 @@
         </div>
     </div>
 </nav>
+<div class="container">
 <?php displayMessage(); ?>
+</div>

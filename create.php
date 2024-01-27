@@ -17,6 +17,7 @@ if (isset($_POST['submit'])) {
     $jobData['salary'] = $_POST['salary'];
     $jobData['contact_user'] = $_POST['contact_user'];
     $jobData['contact_email'] = $_POST['contact_email'];
+    $jobData['responsibility'] = $_POST['responsibility'];
 
     if ($job->createJob($jobData)) {
         redirect('index.php', 'Job created successfully', 'success');

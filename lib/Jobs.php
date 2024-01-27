@@ -76,8 +76,8 @@ class Jobs
 
     //Create Job
     public function createJob($data){
-        $this->db->query("INSERT INTO jobs (job_title, company, category_id, location, deadline, description, salary, contact_user, contact_email) 
-        VALUES (:job_title, :company, :category_id, :location, :deadline, :description, :salary, :contact_user, :contact_email)");
+        $this->db->query("INSERT INTO jobs (job_title, company, category_id, location, deadline, description, salary, contact_user, contact_email, responsibility) 
+        VALUES (:job_title, :company, :category_id, :location, :deadline, :description, :salary, :contact_user, :contact_email, :responsibility)");
 
         //Bind values
         $this->db->bind(':job_title', $data['job_title']);
@@ -89,6 +89,7 @@ class Jobs
         $this->db->bind(':salary', $data['salary']);
         $this->db->bind(':contact_user', $data['contact_user']);
         $this->db->bind(':contact_email', $data['contact_email']);
+        $this->db->bind(':responsibility', $data['responsibility']);
 
         //Execute
         if($this->db->execute()){

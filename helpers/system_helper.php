@@ -1,7 +1,8 @@
 <?php
 
 // Redirect to Page
-function redirect($page = NULL, $message = NULL, $message_type = NULL){
+function redirect($page = NULL, $message = NULL, $message_type = NULL)
+{
     if (is_string($page)) {
         $location = $page;
     } else {
@@ -21,4 +22,26 @@ function redirect($page = NULL, $message = NULL, $message_type = NULL){
     // Redirect
     header("Location: {$location}");
     exit;
+}
+
+// Display Message
+if(!function_exists('displayMessage')) {
+    function displayMessage()
+{
+    if (!empty($_SESSION['message'])) {
+        $message = $_SESSION['message'];
+        if (!empty($_SESSION['message_type'])) {
+            if ($_SESSION['message_type'] == 'error') {
+                echo '<div class="alert alert-danger">' . $message . '</div>';
+            } else {
+                echo '<div class="alert alert-success">' . $message . '</div>';
+            }
+        }
+        // unset message
+        unset($_SESSION['message']);
+        unset($_SESSION['message_type']);
+    } else {
+        echo '';
+    }
+}
 }

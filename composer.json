@@ -3,6 +3,9 @@
     "psr-4": {
       "JobSite\\": "lib/",
       "App\\": "config/"
-    }
+    },
+    "files": [
+      "helpers/system_helper.php"
+    ]
   }
 }

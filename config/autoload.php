@@ -1,13 +1,13 @@
 <?php
 
 //Start Session
-session_start();
+//session_start();
 
 //config file
-require_once 'config.php';
+//require_once 'config.php';
 
 // Include Helpers
-require_once '../helpers/system_helper.php';
+//require_once '../helpers/system_helper.php';
 
 /**
 function autoload($class){

@@ -25,7 +25,7 @@ function redirect($page = NULL, $message = NULL, $message_type = NULL)
 }
 
 // Display Message
-if(!function_exists('displayMessage')) {
+
     function displayMessage()
 {
     if (!empty($_SESSION['message'])) {
@@ -44,4 +44,4 @@ if(!function_exists('displayMessage')) {
         echo '';
     }
 }
-}
+

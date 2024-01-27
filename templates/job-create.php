@@ -6,7 +6,7 @@
 
         <div class="form-group">
             <label for="title">Job Title</label>
-            <input type="text" name="title" id="title" class="form-control" required>
+            <input type="text" name="job_title" id="title" class="form-control" required>
         </div>
 
         <div class="form-group">
@@ -65,7 +65,7 @@
 
 
         <br>
-        <input type="submit" value="Add Job" class="btn btn-primary">
+        <input type="submit" value="Submit" class="btn btn-primary" name="submit">
     </form>
 </div>
 

@@ -7,6 +7,16 @@ use JobSite\Jobs;
 
 $job = new Jobs;
 
+// Delete Job
+if (isset($_POST['del_id'])) {
+    $del_id = $_POST['del_id'];
+    if ($job->deleteJob($del_id)) {
+        redirect('index.php', 'Job deleted successfully', 'success');
+    } else {
+        redirect('index.php', 'Something went wrong', 'error');
+    }
+}
+
 $template = new Template("templates/job-single.php");
 $template->title = "Jobs Site by Sayed";
 

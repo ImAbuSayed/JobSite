@@ -47,6 +47,6 @@
         </div>
     </div>
 </nav>
-<div class="container">
+<div class="container text-center">
 <?php displayMessage(); ?>
 </div>

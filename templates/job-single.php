@@ -78,14 +78,16 @@ include_once 'inc/header.php';
             </tbody>
         </table>
         <div class="text-center">
-            <a class=" btn btn-outline-dark rounded-5
-    " href="job.php?id=<?php echo $job->id; ?>" role="button"><b>Apply</b></a> <a class="btn btn-outline-dark rounded-5"
-                                                                                  href="job.php?id=<?php echo $job->id; ?>"
-                                                                                  role="button"><b>Bookmark</b></a>
+            <a class=" btn btn-outline-dark rounded-5" href="job.php?id=<?php echo $job->id; ?>" role="button"><b>Apply</b></a>
+            <a class="btn btn-outline-dark rounded-5" href="job.php?id=<?php echo $job->id; ?>" role="button"><b>Bookmark</b></a>
+            <a class="btn btn-outline-dark rounded-5" href="edit.php?id=<?php echo $job->id; ?>" role="button"><b>Edit</b></a>
+            <form style="display: inline;" action="job.php" method="post">
+                <input type="hidden" name="del_id" value="<?php echo $job->id; ?>">
+                <input class="btn btn-outline-danger rounded-5" type="submit" name="delete" value="Delete">
+            </form>
         </div>
         <div>
-            <a class="btn btn-danger rounded-5"
-               href="index.php" role="button"><b>Back</b></a>
+            <a class="btn btn-danger rounded-5" href="index.php" role="button"><b>Back</b></a>
         </div>
     </div>
 

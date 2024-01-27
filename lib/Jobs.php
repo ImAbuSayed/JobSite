@@ -98,4 +98,17 @@ class Jobs
             return false;
         }
     }
+
+    // Delete Job
+    public function deleteJob($id){
+        $this->db->query("DELETE FROM jobs WHERE id = :id");
+        $this->db->bind(':id', $id);
+
+        // Execute
+        if($this->db->execute()){
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

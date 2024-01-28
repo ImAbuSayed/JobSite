@@ -23,13 +23,10 @@
                     <a class="nav-link active" aria-current="page" href="localhost/jobsite/JobSite">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Jobs.php">All Jobs</a>
+                    <a class="nav-link" href="#">About</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="true">
-                        Actions
-                    </a>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">Action</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="create.php">Add</a></li>
                         <li><a class="dropdown-item" href="#">Remove</a></li>
@@ -38,6 +35,12 @@
                         </li>
                         <li><a class="dropdown-item" href="#">Modify</a></li>
                     </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Register</a>
                 </li>
             </ul>
             <form class="d-flex" role="search" action="search.php" method="post">

@@ -111,4 +111,29 @@ class Jobs
             return false;
         }
     }
+
+    //Edit Job
+    public function editJob($id, $data){
+        $this->db->query("UPDATE jobs SET job_title = :job_title, company = :company, category_id = :category_id, location = :location, deadline = :deadline, description = :description, salary = :salary, contact_user = :contact_user, contact_email = :contact_email, responsibility = :responsibility WHERE id = :id");
+
+        // Bind values
+        $this->db->bind(':id', $id);
+        $this->db->bind(':job_title', $data['job_title']);
+        $this->db->bind(':company', $data['company']);
+        $this->db->bind(':category_id', $data['category_id']);
+        $this->db->bind(':location', $data['location']);
+        $this->db->bind(':deadline', $data['deadline']);
+        $this->db->bind(':description', $data['description']);
+        $this->db->bind(':salary', $data['salary']);
+        $this->db->bind(':contact_user', $data['contact_user']);
+        $this->db->bind(':contact_email', $data['contact_email']);
+        $this->db->bind(':responsibility', $data['responsibility']);
+
+        // Execute
+        if($this->db->execute()){
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

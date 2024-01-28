@@ -1,7 +1,7 @@
 <?php include_once 'inc/header.php'; ?>
     <div class="divhome">
         <div class="jumbotron container">
-            <h2>Search Result</h2>
+            <h2>Search Result of "<?php echo $searches; ?>"</h2>
         </div>
         <hr class="my-4">
         <?php if (empty($jobs)): ?>

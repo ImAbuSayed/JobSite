@@ -10,8 +10,8 @@ $template = new Template("templates/job-search.php");
 if (isset($_POST['submit'])) {
 
     $search = $_POST['search'];
-
     $template->jobs = $job->searchJobs($search);
+    $template->searches = $search;
 }
 
 $template->title = "Jobs Site by Sayed";

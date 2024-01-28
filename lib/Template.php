@@ -2,6 +2,7 @@
 
 namespace JobSite;
 class Template{
+    public mixed $search;
     protected $template;
     protected $vars = [];
 

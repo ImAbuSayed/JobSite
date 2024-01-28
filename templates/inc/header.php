@@ -40,9 +40,9 @@
                     </ul>
                 </li>
             </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search Job" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+            <form class="d-flex" role="search" action="search.php" method="post">
+                <input class="form-control me-2" type="search" placeholder="Search Job" aria-label="Search" name="search" id="search">
+                <input class="btn btn-outline-success" type="submit" name="submit" value="Search"/>
             </form>
         </div>
     </div>

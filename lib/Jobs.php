@@ -136,4 +136,22 @@ class Jobs
             return false;
         }
     }
+
+    // Search Jobs by navbar search
+
+    public function searchJobs(mixed$search){
+        $this->db->query("SELECT jobs.*, categories.name AS cname
+        FROM jobs
+        INNER JOIN categories
+            ON jobs.category_id = categories.id
+        WHERE jobs.job_title LIKE :search
+        ORDER BY post_time DESC");
+
+        $this->db->bind(':search', '%'.$search.'%');
+
+        $rows = $this->db->resultSet();
+
+        return $rows;
+    }
+
 }

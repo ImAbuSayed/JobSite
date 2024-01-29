@@ -15,4 +15,4 @@ function autoload($class){
     require_once 'lib/'.$class.'.php';
 }
 
-spl_autoload_register('autoload'); */
+spl_autoload_register('autoload'); **/

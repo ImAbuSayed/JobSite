@@ -28,7 +28,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">Action</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="create.php">Add</a></li>
+                        <li><a class="dropdown-item" href="create.php">Add New Job</a></li>
                         <li><a class="dropdown-item" href="#">Remove</a></li>
                         <li>
                             <hr class="dropdown-divider">
